@@ -74,6 +74,8 @@ Widget appBarTitle(BuildContext context) {
 }
 
 Widget _buildBody(BuildContext context) {
+  double height = MediaQuery.of(context).size.height;
+  double width = MediaQuery.of(context).size.width;
   return SizedBox(
     width: double.infinity,
     child: Column(
@@ -87,12 +89,14 @@ Widget _buildBody(BuildContext context) {
             color: nearlyWhite,
             borderRadius: BorderRadius.circular(200),
           ),
-          width: 219,
-          height: 219,
+          width: width * 0.5170,
+          height: height * 0.2326,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset("assets/images/dropbox_logo.png"),
+              SizedBox(
+                  width: width * 0.1701,
+                  child: Image.asset("assets/images/dropbox_logo.png")),
               const SizedBox(
                 height: 20,
               ),
@@ -167,8 +171,8 @@ Widget _buildBody(BuildContext context) {
               MaterialPageRoute(
                   builder: (context) => const DropBoxConnected())),
           child: Container(
-            height: 50,
-            width: 218,
+            height: height * 0.0626,
+            width: width * 0.6222,
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(68), color: greyTextColor),
             child: const Center(

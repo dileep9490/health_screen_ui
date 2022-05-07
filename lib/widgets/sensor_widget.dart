@@ -14,6 +14,8 @@ class SensorWidget extends StatelessWidget {
   final String status;
   @override
   Widget build(BuildContext context) {
+    double height = MediaQuery.of(context).size.height;
+    double width = MediaQuery.of(context).size.width;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
       child: Column(
@@ -26,7 +28,7 @@ class SensorWidget extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(20),
             width: double.infinity,
-            height: 104,
+            height: height * 0.1303,
             decoration: BoxDecoration(
                 color: nearlyWhite, borderRadius: BorderRadius.circular(15)),
             child: Column(
@@ -71,8 +73,8 @@ class SensorWidget extends StatelessWidget {
                           fontSize: 18,
                           fontWeight: FontWeight.w400),
                     ),
-                    const SizedBox(
-                      width: 80,
+                    SizedBox(
+                      width: width * 0.1944,
                     ),
                     const Text(
                       "Status:",

@@ -49,6 +49,8 @@ Widget appBarTitle(BuildContext context) {
 }
 
 Widget _buildBody(BuildContext context) {
+  double height = MediaQuery.of(context).size.height;
+  double width = MediaQuery.of(context).size.width;
   return Container(
     margin: const EdgeInsets.only(top: 60),
     alignment: Alignment.center,
@@ -61,8 +63,8 @@ Widget _buildBody(BuildContext context) {
             children: [
               Container(
                 padding: const EdgeInsets.only(top: 26),
-                height: 180,
-                width: 180,
+                height: height * 0.1912,
+                width: width * 0.4250,
                 decoration: BoxDecoration(
                     border: Border.all(width: 6, color: appBarTitleColor),
                     borderRadius: BorderRadius.circular(100)),
@@ -106,8 +108,8 @@ Widget _buildBody(BuildContext context) {
             children: [
               Container(
                 alignment: Alignment.center,
-                height: 180,
-                width: 180,
+                height: height * 0.1912,
+                width: width * 0.4250,
                 decoration: BoxDecoration(
                     border: Border.all(width: 6, color: appBarTitleColor),
                     borderRadius: BorderRadius.circular(100)),

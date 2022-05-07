@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:health_screen_ui/const.dart';
 
-
 class HealthListItem extends StatefulWidget {
   const HealthListItem({Key? key, required this.imagepath, required this.title})
       : super(key: key);
@@ -17,11 +16,13 @@ class _HealthListItemState extends State<HealthListItem> {
 
   @override
   Widget build(BuildContext context) {
+    double height = MediaQuery.of(context).size.height;
+    double width = MediaQuery.of(context).size.width;
     return Container(
-      height: 100,
-      width: 380,
-      padding: const EdgeInsets.all(20),
-      margin: const EdgeInsets.only(top: 20),
+      height: height * 0.1253,
+      width: width * 0.9236,
+      padding: const EdgeInsets.only(top: 20, left: 20, bottom: 20),
+      margin: const EdgeInsets.only(bottom: 20),
       decoration: BoxDecoration(
         color: nearlyWhite,
         borderRadius: BorderRadius.circular(15),
@@ -46,9 +47,9 @@ class _HealthListItemState extends State<HealthListItem> {
                     fontSize: 22,
                     fontWeight: FontWeight.w700),
               ),
-              const SizedBox(
-                width: 200,
-                child: Text(
+              SizedBox(
+                width: width * 0.5347,
+                child: const Text(
                   "why we take this data from you, if you want to turn it off",
                   maxLines: 2,
                   style: TextStyle(

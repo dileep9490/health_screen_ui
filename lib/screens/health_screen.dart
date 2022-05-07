@@ -93,6 +93,8 @@ List<String> title = [
 ];
 
 Widget _bodyBuild(BuildContext context) {
+  double height = MediaQuery.of(context).size.height;
+  double width = MediaQuery.of(context).size.width;
   return Padding(
     padding: const EdgeInsets.symmetric(horizontal: 30),
     child: Column(
@@ -106,8 +108,8 @@ Widget _bodyBuild(BuildContext context) {
             Column(
               children: [
                 Container(
-                  height: 96,
-                  width: 96,
+                  height: height * 0.1020,
+                  width: width * 0.2266,
                   padding: const EdgeInsets.only(top: 14),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(100),
@@ -127,7 +129,7 @@ Widget _bodyBuild(BuildContext context) {
                         height: 4,
                       ),
                       SizedBox(
-                        height: 40,
+                        height: height * 0.0501,
                         child: Image.asset(
                             "assets/images/google_fit_bandw_logo.png"),
                       ),
@@ -149,8 +151,8 @@ Widget _bodyBuild(BuildContext context) {
             Column(
               children: [
                 Container(
-                  height: 96,
-                  width: 96,
+                  height: height * 0.1020,
+                  width: width * 0.2266,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(100),
                     border: Border.all(width: 4, color: appBarTitleColor),
@@ -178,8 +180,12 @@ Widget _bodyBuild(BuildContext context) {
           "You can choose not to share any of the data by turning it off",
           style: TextStyle(fontFamily: "ProximaNova", fontSize: 21),
         ),
+        const SizedBox(
+          height: 10,
+        ),
         Expanded(
           child: ListView.builder(
+            padding: const EdgeInsets.only(top: 20),
             itemBuilder: (context, count) {
               return HealthListItem(
                 imagepath: imagePaths[count],

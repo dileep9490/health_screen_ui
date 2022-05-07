@@ -73,6 +73,8 @@ Widget appBarTitle(BuildContext context) {
 }
 
 Widget _buildBody(BuildContext context) {
+  double height = MediaQuery.of(context).size.height;
+  double width = MediaQuery.of(context).size.width;
   return SizedBox(
     width: double.infinity,
     child: Column(
@@ -86,14 +88,14 @@ Widget _buildBody(BuildContext context) {
             color: nearlyWhite,
             borderRadius: BorderRadius.circular(200),
           ),
-          width: 200,
-          height: 200,
+          width: width * 0.4722,
+          height: height * 0.2125,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(
                 child: Image.asset("assets/images/nfc_logo.png"),
-                height: 60,
+                height: height * 0.0752,
               ),
               const SizedBox(
                 height: 20,
@@ -117,7 +119,7 @@ Widget _buildBody(BuildContext context) {
           height: 20,
         ),
         Container(
-          height: 130,
+          height: height * 0.1629,
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
@@ -169,8 +171,8 @@ Widget _buildBody(BuildContext context) {
         ),
         Stack(alignment: Alignment.center, children: [
           Container(
-            height: 110,
-            width: 286,
+            height: height * 0.1378,
+            width: width * 0.6951,
             decoration: BoxDecoration(
               color: nearlyWhite,
               borderRadius: BorderRadius.circular(15),
@@ -198,13 +200,13 @@ Widget _buildBody(BuildContext context) {
             ]),
           ),
           Container(
-            height: 130,
+            height: height * 0.1629,
             alignment: Alignment.bottomCenter,
             child: InkWell(
               onTap: () => Navigator.pop(context),
               child: Container(
-                height: 50,
-                width: 218,
+                height: height * 0.0626,
+                width: width * 0.5298,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(68),
                     color: greyTextColor),

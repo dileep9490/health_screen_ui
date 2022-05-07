@@ -47,30 +47,6 @@ Widget appBarTitle(BuildContext context) {
               fontWeight: FontWeight.bold,
               fontSize: 27),
         ),
-        Expanded(
-          child: Padding(
-            padding: const EdgeInsets.only(right: 20),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: [
-                SizedBox(
-                  width: 20,
-                  child: Image.asset(
-                    "assets/images/sync_icon.png",
-                  ),
-                ),
-                const Text(
-                  "4 min. ago",
-                  style: TextStyle(
-                      color: textcolor,
-                      fontSize: 14,
-                      fontFamily: "Roboto",
-                      fontWeight: FontWeight.w400),
-                )
-              ],
-            ),
-          ),
-        )
       ],
     ),
   );
