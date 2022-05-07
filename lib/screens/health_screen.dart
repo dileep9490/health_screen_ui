@@ -110,18 +110,18 @@ Widget _bodyBuild(BuildContext context) {
                 Container(
                   height: height * 0.1020,
                   width: width * 0.2266,
-                  padding: const EdgeInsets.only(top: 14),
+                  padding: const EdgeInsets.only(top: 4),
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(100),
+                    shape: BoxShape.circle,
                     border: Border.all(width: 4, color: appBarTitleColor),
                   ),
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Container(
-                        margin: const EdgeInsets.only(left: 50),
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(100),
-                            color: appBarTitleColor),
+                        margin: const EdgeInsets.only(left: 45),
+                        decoration: const BoxDecoration(
+                            shape: BoxShape.circle, color: appBarTitleColor),
                         height: 7.5,
                         width: 7.5,
                       ),
@@ -129,7 +129,7 @@ Widget _bodyBuild(BuildContext context) {
                         height: 4,
                       ),
                       SizedBox(
-                        height: height * 0.0501,
+                        height: height * 0.0490,
                         child: Image.asset(
                             "assets/images/google_fit_bandw_logo.png"),
                       ),
@@ -154,7 +154,7 @@ Widget _bodyBuild(BuildContext context) {
                   height: height * 0.1020,
                   width: width * 0.2266,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(100),
+                    shape: BoxShape.circle,
                     border: Border.all(width: 4, color: appBarTitleColor),
                   ),
                   child: Image.asset("assets/images/ios_health_bandw_logo.png"),

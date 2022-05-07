@@ -24,8 +24,8 @@ class SesnsorIconWidget extends StatelessWidget {
           Container(
             height: height * 0.1646,
             width: width * 0.3659,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(200), color: nearlyWhite),
+            decoration:
+                const BoxDecoration(shape: BoxShape.circle, color: nearlyWhite),
             child: Image.asset(imagePath),
           ),
           const SizedBox(

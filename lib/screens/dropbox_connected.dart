@@ -84,9 +84,9 @@ Widget _buildBody(BuildContext context) {
           height: 40,
         ),
         Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color: nearlyWhite,
-            borderRadius: BorderRadius.circular(200),
+            shape: BoxShape.circle,
           ),
           width: width * 0.4722,
           height: height * 0.2125,

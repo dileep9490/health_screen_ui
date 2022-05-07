@@ -62,19 +62,19 @@ Widget _buildBody(BuildContext context) {
           child: Column(
             children: [
               Container(
-                padding: const EdgeInsets.only(top: 26),
+                padding: const EdgeInsets.only(top: 24),
                 height: height * 0.1912,
                 width: width * 0.4250,
                 decoration: BoxDecoration(
-                    border: Border.all(width: 6, color: appBarTitleColor),
-                    borderRadius: BorderRadius.circular(100)),
+                  border: Border.all(width: 6, color: appBarTitleColor),
+                  shape: BoxShape.circle,
+                ),
                 child: Column(
                   children: [
                     Container(
                       margin: const EdgeInsets.only(left: 90),
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(100),
-                          color: appBarTitleColor),
+                      decoration: const BoxDecoration(
+                          shape: BoxShape.circle, color: appBarTitleColor),
                       height: 13,
                       width: 13,
                     ),
@@ -82,7 +82,7 @@ Widget _buildBody(BuildContext context) {
                       height: 10,
                     ),
                     SizedBox(
-                      height: 80,
+                      height: 70,
                       child: Image.asset("assets/images/google_fit_logo.png"),
                     ),
                   ],
@@ -111,8 +111,9 @@ Widget _buildBody(BuildContext context) {
                 height: height * 0.1912,
                 width: width * 0.4250,
                 decoration: BoxDecoration(
-                    border: Border.all(width: 6, color: appBarTitleColor),
-                    borderRadius: BorderRadius.circular(100)),
+                  border: Border.all(width: 6, color: appBarTitleColor),
+                  shape: BoxShape.circle,
+                ),
                 child: SizedBox(
                   height: 80,
                   child: Image.asset("assets/images/ios_health_logo.png"),
