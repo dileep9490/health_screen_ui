@@ -33,7 +33,7 @@ Widget appBarTitle(BuildContext context) {
         InkWell(
           child: SizedBox(
             height: MediaQuery.of(context).size.height * 0.0340,
-            child: SvgPicture.asset("assets/images/arrow_back_icon.png"),
+            child: SvgPicture.asset("assets/images/arrow_back_icon.svg"),
           ),
           onTap: () => Navigator.pop(context),
         ),
@@ -72,7 +72,7 @@ Widget _buildBody(BuildContext context) {
           height: 26,
         ),
         SesnsorIconWidget(
-          imagePath: "assets/images/nfc_logo.png",
+          imagePath: "assets/images/nfc_logo.svg",
           title: "NFC",
           onTap: () => Navigator.push(
             context,
@@ -85,7 +85,7 @@ Widget _buildBody(BuildContext context) {
           height: MediaQuery.of(context).size.height * 0.0425,
         ),
         SesnsorIconWidget(
-          imagePath: "assets/images/dropbox_logo.png",
+          imagePath: "assets/images/dropbox_logo.svg",
           title: "DropBox",
           onTap: () => Navigator.push(
             context,

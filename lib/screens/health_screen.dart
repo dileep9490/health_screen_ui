@@ -29,7 +29,7 @@ Widget appBarTitle(BuildContext context) {
         InkWell(
           child: SizedBox(
             height: MediaQuery.of(context).size.height * 0.0340,
-            child: SvgPicture.asset("assets/images/arrow_back_icon.png"),
+            child: SvgPicture.asset("assets/images/arrow_back_icon.svg"),
           ),
           onTap: () => Navigator.pop(context),
         ),
@@ -53,7 +53,7 @@ Widget appBarTitle(BuildContext context) {
                 SizedBox(
                   width: 20,
                   child: SvgPicture.asset(
-                    "assets/images/sync_icon.png",
+                    "assets/images/async_arrow_icon.svg",
                   ),
                 ),
                 const Text(
@@ -74,13 +74,13 @@ Widget appBarTitle(BuildContext context) {
 }
 
 List<String> imagePaths = [
-  "calorie_icon.png",
-  "steps_icon.png",
-  "distancetravelled_icon.png",
-  "sleeptime_icon.png",
-  "heartrate_icon.png",
-  "height_icon.png",
-  "weight_icon.png"
+  "calories_icon.svg",
+  "steps_icon.svg",
+  "distance_travelled_icon.svg",
+  "sleep_time_icon.svg",
+  "heart_rate_icon.svg",
+  "height_icon.svg",
+  "weight_icon.svg"
 ];
 
 List<String> title = [
@@ -132,7 +132,9 @@ Widget _bodyBuild(BuildContext context) {
                       SizedBox(
                         height: height * 0.0490,
                         child: SvgPicture.asset(
-                            "assets/images/google_fit_bandw_logo.png"),
+                          "assets/images/google_fit_logo.svg",
+                          color: appBarTitleColor,
+                        ),
                       ),
                     ],
                   ),
@@ -152,14 +154,18 @@ Widget _bodyBuild(BuildContext context) {
             Column(
               children: [
                 Container(
-                  height: height * 0.1020,
-                  width: width * 0.2266,
+                  padding: const EdgeInsets.all(20),
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     border: Border.all(width: 4, color: appBarTitleColor),
                   ),
                   child: SvgPicture.asset(
-                      "assets/images/ios_health_bandw_logo.png"),
+                    //!not displaying
+                    "assets/images/ios_health_logo.svg",
+                    color: appBarTitleColor,
+                    height: height * 0.0446,
+                    width: width * 0.0991,
+                  ),
                 ),
                 const SizedBox(
                   height: 6,

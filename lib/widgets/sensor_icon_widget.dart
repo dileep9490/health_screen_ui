@@ -23,11 +23,14 @@ class SesnsorIconWidget extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: height * 0.1646,
-            width: width * 0.3659,
+            padding: const EdgeInsets.all(24),
             decoration:
                 const BoxDecoration(shape: BoxShape.circle, color: nearlyWhite),
-            child: SvgPicture.asset(imagePath),
+            child: SvgPicture.asset(
+              imagePath,
+              height: 84.2,
+              width: 84.2,
+            ),
           ),
           const SizedBox(
             height: 4,

@@ -29,7 +29,7 @@ Widget appBarTitle(BuildContext context) {
         InkWell(
           child: SizedBox(
             height: MediaQuery.of(context).size.height * 0.0340,
-            child: SvgPicture.asset("assets/images/arrow_back_icon.png"),
+            child: SvgPicture.asset("assets/images/arrow_back_icon.svg"),
           ),
           onTap: () => Navigator.pop(context),
         ),
@@ -53,7 +53,7 @@ Widget appBarTitle(BuildContext context) {
                 SizedBox(
                   width: 20,
                   child: SvgPicture.asset(
-                    "assets/images/sync_icon.png",
+                    "assets/images/async_arrow_icon.svg",
                   ),
                 ),
                 const Text(
@@ -95,7 +95,7 @@ Widget _buildBody(BuildContext context) {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(
-                child: SvgPicture.asset("assets/images/dropbox_logo.png"),
+                child: SvgPicture.asset("assets/images/dropbox_logo.svg"),
                 height: height * 0.0752,
               ),
               const SizedBox(

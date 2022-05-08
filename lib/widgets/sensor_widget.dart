@@ -38,6 +38,7 @@ class SensorWidget extends StatelessWidget {
                   children: [
                     SizedBox(
                       height: 24,
+                      width: 24,
                       child: SvgPicture.asset(imagePath),
                     ),
                     const SizedBox(

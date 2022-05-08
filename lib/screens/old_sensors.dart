@@ -28,7 +28,7 @@ Widget appBarTitle(BuildContext context) {
         InkWell(
           child: SizedBox(
             height: MediaQuery.of(context).size.height * 0.0340,
-            child: SvgPicture.asset("assets/images/arrow_back_icon.png"),
+            child: SvgPicture.asset("assets/images/arrow_back_icon.svg"),
           ),
           onTap: () => Navigator.pop(context),
         ),
@@ -52,7 +52,7 @@ Widget appBarTitle(BuildContext context) {
                 SizedBox(
                   width: 20,
                   child: SvgPicture.asset(
-                    "assets/images/sync_icon.png",
+                    "assets/images/async_arrow_icon.svg",
                   ),
                 ),
                 const Text(
@@ -76,15 +76,15 @@ Widget _buildBody() {
   return Column(
     children: const [
       SensorWidget(
-          imagePath: "assets/images/nfc_logo.png",
+          imagePath: "assets/images/nfc_logo.svg",
           status: "Connected",
           title: "NFC"),
       SensorWidget(
-          imagePath: "assets/images/dropbox_logo.png",
+          imagePath: "assets/images/dropbox_logo.svg",
           status: "Disconnected",
           title: "DropBox"),
       SensorWidget(
-          imagePath: "assets/images/nfc_logo.png",
+          imagePath: "assets/images/nfc_logo.svg",
           status: "Connected",
           title: "NFC"),
     ],

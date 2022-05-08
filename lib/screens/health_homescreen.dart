@@ -29,7 +29,7 @@ Widget appBarTitle(BuildContext context) {
         InkWell(
           child: SizedBox(
             height: MediaQuery.of(context).size.height * 0.0340,
-            child: SvgPicture.asset("assets/images/arrow_back_icon.png"),
+            child: SvgPicture.asset("assets/images/arrow_back_icon.svg"),
           ),
           onTap: () => Navigator.pop(context),
         ),
@@ -85,7 +85,7 @@ Widget _buildBody(BuildContext context) {
                     SizedBox(
                       height: height * 0.0743,
                       child:
-                          SvgPicture.asset("assets/images/google_fit_logo.png"),
+                          SvgPicture.asset("assets/images/google_fit_logo.svg"),
                     ),
                   ],
                 ),
@@ -117,7 +117,8 @@ Widget _buildBody(BuildContext context) {
                   shape: BoxShape.circle,
                 ),
                 child: SizedBox(
-                  child: SvgPicture.asset("assets/images/ios_health_logo.png"),
+                  //! not dispalying
+                  child: SvgPicture.asset("assets/images/ios_health_logo.svg"),
                 ),
               ),
               const Text(

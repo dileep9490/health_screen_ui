@@ -30,7 +30,7 @@ Widget appBarTitle(BuildContext context) {
         InkWell(
           child: SizedBox(
             height: 32,
-            child: SvgPicture.asset("assets/images/arrow_back_icon.png"),
+            child: SvgPicture.asset("assets/images/arrow_back_icon.svg"),
           ),
           onTap: () => Navigator.pop(context),
         ),
@@ -54,7 +54,7 @@ Widget appBarTitle(BuildContext context) {
                 SizedBox(
                   width: 20,
                   child: SvgPicture.asset(
-                    "assets/images/sync_icon.png",
+                    "assets/images/async_arrow_icon.svg",
                   ),
                 ),
                 const Text(
@@ -97,7 +97,7 @@ Widget _buildBody(BuildContext context) {
             children: [
               SizedBox(
                   width: width * 0.1701,
-                  child: SvgPicture.asset("assets/images/nfc_logo.png")),
+                  child: SvgPicture.asset("assets/images/nfc_logo.svg")),
               const SizedBox(
                 height: 20,
               ),
