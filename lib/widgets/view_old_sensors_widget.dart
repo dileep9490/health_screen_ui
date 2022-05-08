@@ -18,8 +18,8 @@ class ViewOldSensorsWidget extends StatelessWidget {
         ),
       ),
       child: Container(
-          height: 60,
-          width: 380,
+          height: MediaQuery.of(context).size.height * 0.0637,
+          width: MediaQuery.of(context).size.width * 0.8972,
           padding: const EdgeInsets.symmetric(horizontal: 20),
           margin: const EdgeInsets.only(bottom: 20),
           decoration: BoxDecoration(

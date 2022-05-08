@@ -27,7 +27,7 @@ Widget appBarTitle(BuildContext context) {
       children: [
         InkWell(
           child: SizedBox(
-            height: 32,
+                  height: MediaQuery.of(context).size.height * 0.0340,
             child: Image.asset("assets/images/arrow_back_icon.png"),
           ),
           onTap: () => Navigator.pop(context),
@@ -173,8 +173,8 @@ Widget _bodyBuild(BuildContext context) {
             )
           ],
         ),
-        const SizedBox(
-          height: 40,
+         SizedBox(
+          height: height*0.0425,
         ),
         const Text(
           "You can choose not to share any of the data by turning it off",

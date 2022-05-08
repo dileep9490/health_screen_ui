@@ -21,7 +21,7 @@ class _HealthListItemState extends State<HealthListItem> {
     return Container(
       height: height * 0.1253,
       width: width * 0.9236,
-      padding: const EdgeInsets.only(top: 20, left: 20, bottom: 20),
+      padding: const EdgeInsets.only(top: 20, left: 20, bottom: 10),
       margin: const EdgeInsets.only(bottom: 20),
       decoration: BoxDecoration(
         color: nearlyWhite,
@@ -31,7 +31,7 @@ class _HealthListItemState extends State<HealthListItem> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-            height: 28,
+            height: height * 0.0297,
             child: Image.asset("assets/images/" + widget.imagepath),
           ),
           const SizedBox(

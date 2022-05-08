@@ -26,7 +26,7 @@ Widget appBarTitle(BuildContext context) {
       children: [
         InkWell(
           child: SizedBox(
-            height: 32,
+           height: MediaQuery.of(context).size.height * 0.0340,
             child: Image.asset("assets/images/arrow_back_icon.png"),
           ),
           onTap: () => Navigator.pop(context),

@@ -28,7 +28,7 @@ Widget appBarTitle(BuildContext context) {
       children: [
         InkWell(
           child: SizedBox(
-            height: 32,
+            height: MediaQuery.of(context).size.height * 0.0340,
             child: Image.asset("assets/images/arrow_back_icon.png"),
           ),
           onTap: () => Navigator.pop(context),
@@ -81,8 +81,8 @@ Widget _buildBody(BuildContext context) {
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        const SizedBox(
-          height: 40,
+        SizedBox(
+          height: height * 0.0425,
         ),
         Container(
           decoration: const BoxDecoration(
@@ -115,7 +115,7 @@ Widget _buildBody(BuildContext context) {
           height: 20,
         ),
         Container(
-          height: 130,
+          height: height*0.1381,
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
@@ -162,8 +162,8 @@ Widget _buildBody(BuildContext context) {
             ],
           ),
         ),
-        const SizedBox(
-          height: 140,
+         SizedBox(
+          height: height*0.1487,
         ),
         InkWell(
           onTap: () => Navigator.push(

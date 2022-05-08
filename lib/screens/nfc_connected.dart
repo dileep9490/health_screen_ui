@@ -80,13 +80,13 @@ Widget _buildBody(BuildContext context) {
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        const SizedBox(
-          height: 40,
+        SizedBox(
+          height: height * 0.0425,
         ),
         Container(
           decoration: const BoxDecoration(
             color: nearlyWhite,
-            shape: BoxShape.circle   ,
+            shape: BoxShape.circle,
           ),
           width: width * 0.4722,
           height: height * 0.2125,
@@ -119,8 +119,8 @@ Widget _buildBody(BuildContext context) {
           height: 20,
         ),
         Container(
-          height: height * 0.1629,
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
+          height: height * 0.1729,
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(15),
               border: Border.all(width: 2, color: borderColor)),
@@ -166,8 +166,8 @@ Widget _buildBody(BuildContext context) {
             ],
           ),
         ),
-        const SizedBox(
-          height: 74,
+        SizedBox(
+          height: height * 0.0786,
         ),
         Stack(alignment: Alignment.center, children: [
           Container(

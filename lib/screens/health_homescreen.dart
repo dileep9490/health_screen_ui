@@ -27,7 +27,7 @@ Widget appBarTitle(BuildContext context) {
       children: [
         InkWell(
           child: SizedBox(
-            height: 32,
+               height: MediaQuery.of(context).size.height * 0.0340,
             child: Image.asset("assets/images/arrow_back_icon.png"),
           ),
           onTap: () => Navigator.pop(context),
@@ -82,7 +82,7 @@ Widget _buildBody(BuildContext context) {
                       height: 10,
                     ),
                     SizedBox(
-                      height: 70,
+                      height: height*0.0743,
                       child: Image.asset("assets/images/google_fit_logo.png"),
                     ),
                   ],
@@ -98,8 +98,8 @@ Widget _buildBody(BuildContext context) {
             ],
           ),
         ),
-        const SizedBox(
-          height: 40,
+        SizedBox(
+          height: height*0.0425,
         ),
         InkWell(
           onTap: () => Navigator.push(context,
@@ -115,7 +115,6 @@ Widget _buildBody(BuildContext context) {
                   shape: BoxShape.circle,
                 ),
                 child: SizedBox(
-                  height: 80,
                   child: Image.asset("assets/images/ios_health_logo.png"),
                 ),
               ),

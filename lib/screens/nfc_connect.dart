@@ -81,8 +81,8 @@ Widget _buildBody(BuildContext context) {
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        const SizedBox(
-          height: 40,
+        SizedBox(
+          height: height * 0.0425,
         ),
         Container(
           decoration: const BoxDecoration(
@@ -161,8 +161,8 @@ Widget _buildBody(BuildContext context) {
             ],
           ),
         ),
-        const SizedBox(
-          height: 100,
+        SizedBox(
+          height: height * 0.1062,
         ),
         InkWell(
           onTap: () => Navigator.push(context,
