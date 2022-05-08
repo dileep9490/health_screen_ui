@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:health_screen_ui/const.dart';
 import 'package:health_screen_ui/screens/nfc_connected.dart';
 import 'package:health_screen_ui/widgets/view_old_sensors_widget.dart';
@@ -29,7 +30,7 @@ Widget appBarTitle(BuildContext context) {
         InkWell(
           child: SizedBox(
             height: 32,
-            child: Image.asset("assets/images/arrow_back_icon.png"),
+            child: SvgPicture.asset("assets/images/arrow_back_icon.png"),
           ),
           onTap: () => Navigator.pop(context),
         ),
@@ -52,7 +53,7 @@ Widget appBarTitle(BuildContext context) {
               children: [
                 SizedBox(
                   width: 20,
-                  child: Image.asset(
+                  child: SvgPicture.asset(
                     "assets/images/sync_icon.png",
                   ),
                 ),
@@ -96,7 +97,7 @@ Widget _buildBody(BuildContext context) {
             children: [
               SizedBox(
                   width: width * 0.1701,
-                  child: Image.asset("assets/images/nfc_logo.png")),
+                  child: SvgPicture.asset("assets/images/nfc_logo.png")),
               const SizedBox(
                 height: 20,
               ),

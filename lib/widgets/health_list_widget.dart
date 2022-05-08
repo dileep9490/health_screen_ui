@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:health_screen_ui/const.dart';
 
 class HealthListItem extends StatefulWidget {
@@ -32,7 +33,7 @@ class _HealthListItemState extends State<HealthListItem> {
         children: [
           SizedBox(
             height: height * 0.0297,
-            child: Image.asset("assets/images/" + widget.imagepath),
+            child: SvgPicture.asset("assets/images/" + widget.imagepath),
           ),
           const SizedBox(
             width: 20,

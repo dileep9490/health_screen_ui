@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:health_screen_ui/const.dart';
 import 'package:health_screen_ui/screens/dropbox_connect.dart';
 import 'package:health_screen_ui/screens/nfc_connect.dart';
@@ -32,7 +33,7 @@ Widget appBarTitle(BuildContext context) {
         InkWell(
           child: SizedBox(
             height: MediaQuery.of(context).size.height * 0.0340,
-            child: Image.asset("assets/images/arrow_back_icon.png"),
+            child: SvgPicture.asset("assets/images/arrow_back_icon.png"),
           ),
           onTap: () => Navigator.pop(context),
         ),
@@ -80,8 +81,8 @@ Widget _buildBody(BuildContext context) {
             ),
           ),
         ),
-         SizedBox(
-          height: MediaQuery.of(context).size.height*0.0425,
+        SizedBox(
+          height: MediaQuery.of(context).size.height * 0.0425,
         ),
         SesnsorIconWidget(
           imagePath: "assets/images/dropbox_logo.png",

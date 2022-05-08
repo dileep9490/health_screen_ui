@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:health_screen_ui/widgets/health_list_widget.dart';
 
 import '../const.dart';
@@ -27,8 +28,8 @@ Widget appBarTitle(BuildContext context) {
       children: [
         InkWell(
           child: SizedBox(
-                  height: MediaQuery.of(context).size.height * 0.0340,
-            child: Image.asset("assets/images/arrow_back_icon.png"),
+            height: MediaQuery.of(context).size.height * 0.0340,
+            child: SvgPicture.asset("assets/images/arrow_back_icon.png"),
           ),
           onTap: () => Navigator.pop(context),
         ),
@@ -51,7 +52,7 @@ Widget appBarTitle(BuildContext context) {
               children: [
                 SizedBox(
                   width: 20,
-                  child: Image.asset(
+                  child: SvgPicture.asset(
                     "assets/images/sync_icon.png",
                   ),
                 ),
@@ -130,7 +131,7 @@ Widget _bodyBuild(BuildContext context) {
                       ),
                       SizedBox(
                         height: height * 0.0490,
-                        child: Image.asset(
+                        child: SvgPicture.asset(
                             "assets/images/google_fit_bandw_logo.png"),
                       ),
                     ],
@@ -157,7 +158,8 @@ Widget _bodyBuild(BuildContext context) {
                     shape: BoxShape.circle,
                     border: Border.all(width: 4, color: appBarTitleColor),
                   ),
-                  child: Image.asset("assets/images/ios_health_bandw_logo.png"),
+                  child: SvgPicture.asset(
+                      "assets/images/ios_health_bandw_logo.png"),
                 ),
                 const SizedBox(
                   height: 6,
@@ -173,8 +175,8 @@ Widget _bodyBuild(BuildContext context) {
             )
           ],
         ),
-         SizedBox(
-          height: height*0.0425,
+        SizedBox(
+          height: height * 0.0425,
         ),
         const Text(
           "You can choose not to share any of the data by turning it off",

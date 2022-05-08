@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:health_screen_ui/widgets/sensor_widget.dart';
 
 import '../const.dart';
@@ -26,8 +27,8 @@ Widget appBarTitle(BuildContext context) {
       children: [
         InkWell(
           child: SizedBox(
-           height: MediaQuery.of(context).size.height * 0.0340,
-            child: Image.asset("assets/images/arrow_back_icon.png"),
+            height: MediaQuery.of(context).size.height * 0.0340,
+            child: SvgPicture.asset("assets/images/arrow_back_icon.png"),
           ),
           onTap: () => Navigator.pop(context),
         ),
@@ -50,7 +51,7 @@ Widget appBarTitle(BuildContext context) {
               children: [
                 SizedBox(
                   width: 20,
-                  child: Image.asset(
+                  child: SvgPicture.asset(
                     "assets/images/sync_icon.png",
                   ),
                 ),

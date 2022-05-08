@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import '../const.dart';
 
@@ -26,7 +27,7 @@ class SesnsorIconWidget extends StatelessWidget {
             width: width * 0.3659,
             decoration:
                 const BoxDecoration(shape: BoxShape.circle, color: nearlyWhite),
-            child: Image.asset(imagePath),
+            child: SvgPicture.asset(imagePath),
           ),
           const SizedBox(
             height: 4,

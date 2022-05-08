@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 import '../const.dart';
 
@@ -37,7 +38,7 @@ class SensorWidget extends StatelessWidget {
                   children: [
                     SizedBox(
                       height: 24,
-                      child: Image.asset(imagePath),
+                      child: SvgPicture.asset(imagePath),
                     ),
                     const SizedBox(
                       width: 20,

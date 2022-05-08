@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:health_screen_ui/screens/health_screen.dart';
 
 import '../const.dart';
@@ -27,8 +28,8 @@ Widget appBarTitle(BuildContext context) {
       children: [
         InkWell(
           child: SizedBox(
-               height: MediaQuery.of(context).size.height * 0.0340,
-            child: Image.asset("assets/images/arrow_back_icon.png"),
+            height: MediaQuery.of(context).size.height * 0.0340,
+            child: SvgPicture.asset("assets/images/arrow_back_icon.png"),
           ),
           onTap: () => Navigator.pop(context),
         ),
@@ -82,8 +83,9 @@ Widget _buildBody(BuildContext context) {
                       height: 10,
                     ),
                     SizedBox(
-                      height: height*0.0743,
-                      child: Image.asset("assets/images/google_fit_logo.png"),
+                      height: height * 0.0743,
+                      child:
+                          SvgPicture.asset("assets/images/google_fit_logo.png"),
                     ),
                   ],
                 ),
@@ -99,7 +101,7 @@ Widget _buildBody(BuildContext context) {
           ),
         ),
         SizedBox(
-          height: height*0.0425,
+          height: height * 0.0425,
         ),
         InkWell(
           onTap: () => Navigator.push(context,
@@ -115,7 +117,7 @@ Widget _buildBody(BuildContext context) {
                   shape: BoxShape.circle,
                 ),
                 child: SizedBox(
-                  child: Image.asset("assets/images/ios_health_logo.png"),
+                  child: SvgPicture.asset("assets/images/ios_health_logo.png"),
                 ),
               ),
               const Text(
